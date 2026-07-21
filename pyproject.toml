@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repobadge"
+version = "0.1.0"
+description = "Generate concise SVG badges from GitHub repository metadata."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+repobadge = "repobadge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

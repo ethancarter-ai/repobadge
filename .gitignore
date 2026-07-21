@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+.mypy_cache/
+.pytest_cache/
+*.db
+dev.db
+.eggs/
+.installed.cfg
+
+# Packaging
+*.whl
+*.pyz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+
+# Project artifacts
+coverage/
+htmlcov/
+*.log
+
+# CI/test caches
+.python-version
+
+# Agent metadata
+AGENTS.md
+CLAUDE.md
