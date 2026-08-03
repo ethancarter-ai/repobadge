@@ -4,9 +4,11 @@ Generate concise SVG badges summarizing GitHub repository statistics.
 
 ## About
 
-`repobadge` turns live or cached GitHub repository metadata into compact SVG badges. It’s designed for quick embedding in READMEs, dashboards, or status pages.
+`repobadge` turns live or cached GitHub repository metadata into compact SVG badges. It's designed for quick embedding in READMEs, dashboards, or status pages.
 
 The current badge emphasizes repository stars, with optional language color tagging. It supports multiple visual styles.
+
+- Source code: https://github.com/ethancarter-ai/repobadge
 
 ## Features
 
@@ -25,7 +27,7 @@ python -m pip install .
 Source install:
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/ethancarter-ai/repobadge.git
 cd repobadge
 PYTHONPATH=src python -m repobadge.cli .
 ```
