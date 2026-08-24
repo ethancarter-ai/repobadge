@@ -8,7 +8,7 @@ from typing import Any, Dict, Optional
 __all__ = ["fetch_repo_data"]
 
 _API = "https://api.github.com/repos/{repo}"
-_USER_AGENT = "repobadge/0.1 (+https://github.com/example/repobadge)"
+_USER_AGENT = "repobadge/0.1 (+https://github.com/ethancarter-ai/repobadge)"
 
 
 def fetch_repo_data(repo: str, *, token: Optional[str] = None) -> Dict[str, Any]:

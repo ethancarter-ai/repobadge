@@ -29,15 +29,15 @@ Source install:
 ```bash
 git clone https://github.com/ethancarter-ai/repobadge.git
 cd repobadge
-PYTHONPATH=src python -m repobadge.cli .
+python -m pip install -e .
 ```
 
 ## Usage
 
 ```bash
-repobadge octocat/Hello-World --style flat
-repobadge octocat/Hello-World --style plastic
-python -m repobadge.cli octocat/Hello-World
+repobadge --summary-file path/to/repo.json --style flat
+repobadge --summary-file path/to/repo.json --style plastic --output badge.svg
+python -m repobadge --summary-file path/to/repo.json --style flat
 ```
 
 Offline rendering from a cached summary file in JSON format:
@@ -68,10 +68,6 @@ repobadge/
   README.md
   .gitignore
 ```
-
-## Tags
-
-github, badge, svg, cli, developer-tools, static-analysis, oss
 
 ## License
 
