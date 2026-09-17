@@ -72,3 +72,21 @@ repobadge/
 ## License
 
 MIT
+
+## Contributing
+
+Contributions are welcome. To set up a development environment:
+
+1. Clone the repository and enter the project directory.
+2. Install the package in editable mode with dev dependencies:
+   ```bash
+   python -m pip install -e ".[dev]"
+   ```
+3. Run the test suite:
+   ```bash
+   python -m pytest tests -q
+   ```
+4. Make your changes. Add or update tests in `tests/` when fixing bugs or adding features.
+5. Ensure all tests pass locally before opening a pull request.
+
+Pull requests should be targeted at the `main` branch. Please keep commits focused and descriptive.
