@@ -5,7 +5,7 @@ import json
 import sys
 from typing import Optional
 
-from . import compute_and_render, render_badge_svg, compute_summary, RepoSummary
+from . import render_badge_svg, RepoSummary
 
 __all__ = ["main"]
 

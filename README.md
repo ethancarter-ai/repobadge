@@ -55,17 +55,19 @@ repobadge --summary-file path/to/repo.json --style flat
 
 ```text
 repobadge/
-  src/repobadge/
-    __init__.py
-    cli.py
-    core.py
-    parser.py
+  src/
+    repobadge/
+      __init__.py
+      cli.py
+      core.py
+      parser.py
   tests/
     test_repobadge.py
   docs/
     usage.md
   pyproject.toml
   README.md
+  LICENSE
   .gitignore
 ```
 

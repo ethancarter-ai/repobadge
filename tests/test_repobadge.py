@@ -1,7 +1,6 @@
 from __future__ import annotations
 import argparse
 import json
-import os
 import sys
 import tempfile
 from pathlib import Path
@@ -9,7 +8,7 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, "src")
-from repobadge.core import compute_and_render, render_badge_svg, compute_summary, RepoSummary
+from repobadge.core import render_badge_svg, RepoSummary
 from repobadge.cli import main, _build_parser
 
 

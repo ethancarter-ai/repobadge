@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Iterable, List, Optional
+from typing import Optional
 
 from . import parser
 
@@ -54,18 +54,14 @@ def render_badge_svg(summary: RepoSummary, style: str = "flat") -> str:
     if summary.language:
         right = f"{summary.language} • ★ {summary.stars}"
 
-    bg_left = "#555555"
     bg_right = _slug_color(summary.language) if summary.language else "#4CAF50"
 
     if style == "flat":
         radius = "0"
-        divider = "0"
     elif style == "flat-square":
         radius = "4"
-        divider = "0"
     else:
         radius = "50"
-        divider = "2"
 
     left_width = 96
     right_width = 76
